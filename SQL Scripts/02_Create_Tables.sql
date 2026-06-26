@@ -96,18 +96,18 @@ CREATE TABLE IF NOT EXISTS  Categories (
 CREATE TABLE IF NOT EXISTS  CampusLocations (
     LocationID INT UNSIGNED AUTO_INCREMENT,
     LocationType ENUM(
-        'Admin Block',
-        'Hostel',
-        'Mess Hall',
-        'Sports',
-        'New Gallery',
-        'Library',
-        'GYMKHANA Park',
-        'Other'
+       'Academic',
+       'Hostel',
+	   'Dining',
+       'Sports',
+	   'Administration',
+       'Library',
+       'Parking',
+	   'Other'
     ) NOT NULL,
 
     LocationName VARCHAR(100) NOT NULL,
-    Description VARCHAR(255),
+    Description TEXT,
 
     CONSTRAINT PK_CampusLocations PRIMARY KEY (LocationID),
     CONSTRAINT UQ_LocationName UNIQUE (LocationName)
