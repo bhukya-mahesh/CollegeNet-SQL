@@ -1,5 +1,13 @@
 
 USE CollegeNet;
+/*
+============================================================
+Project      : CollegeNet - Campus Resource & Marketplace
+Module       : Views
+Author       : Mahesh Bhukya
+Database     : MySQL 8.0
+============================================================
+*/
 
  -- =========================================================
 -- View Name : vw_LostItems
